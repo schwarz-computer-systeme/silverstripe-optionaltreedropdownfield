@@ -11,6 +11,10 @@
 class OptionalTreeDropdownField extends TreeDropdownField
 {
 
+	private static $allowed_actions = array(
+		'tree'
+	);
+	
 	/**
 	 * @var boolean $hasEmptyDefault Show the first <option> element as
 	 * empty (not having a value), with an optional label defined through
